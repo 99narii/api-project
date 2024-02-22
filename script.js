@@ -1,8 +1,9 @@
-const API_KEY = `cf14a883ebcc43a8a235a2ba6ae0e1c7`;
+// const API_KEY = `cf14a883ebcc43a8a235a2ba6ae0e1c7`;
 let newsList = []
 const getLatesNews = async ()=>{
     const url = new URL (
-        `http://times-node-env.eba-appvq3ef.ap-northeast-2.elasticbeanstalk.com/top-headlines`
+        `https://luxury-bienenstitch-33fe19.netlify.app/`
+        // `http://times-node-env.eba-appvq3ef.ap-northeast-2.elasticbeanstalk.com/top-headlines`
     );
     const response = await fetch(url);
     const data = await response.json();
