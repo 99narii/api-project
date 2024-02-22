@@ -2,7 +2,7 @@
 let newsList = []
 const getLatesNews = async ()=>{
     const url = new URL (
-        `https://luxury-bienenstitch-33fe19.netlify.app/`
+        `https://luxury-bienenstitch-33fe19.netlify.app/top-headlines`
         // `http://times-node-env.eba-appvq3ef.ap-northeast-2.elasticbeanstalk.com/top-headlines`
     );
     const response = await fetch(url);
