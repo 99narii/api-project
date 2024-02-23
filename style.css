@@ -6,6 +6,18 @@
 .head-line svg {
     width: 430px;
 }
+#searchInput {
+    border: none;
+    border-bottom: 1px solid #262626;
+}
+.search-button {
+    border: none;
+    background-color: #262626;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9em;
+    border-radius: 0.4em;
+}
 .menus {
     margin-top: 1em;
     display: flex;
@@ -28,4 +40,78 @@
 }
 .news {
     border-bottom: 1px solid black;
+    margin: 2em 0;
 }
+.menu-button {
+    font-size: 2em;
+    display: none;
+    cursor: pointer;
+}
+.search {
+    display: flex;
+    justify-content: flex-end;
+    margin: 1em 0em;
+}
+.mySidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+  
+  .mySidenav button {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #686868;
+    display: block;
+    background-color: none;
+    border: none
+  }
+  
+  .mySidenav button:hover {
+    color: #262626;
+  }
+  
+  .mySidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    text-decoration: none;
+    color: #262626;
+  }
+  
+
+@media screen and (max-width: 600px) {
+    .menus {
+      display: none;
+    }
+    .menu-button {
+        font-size: 2em;
+        display: contents;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .col-lg-8 h2{
+        font-size: 1em;
+        font-weight: 600;
+    }
+    .col-lg-8 p{
+        font-size: 0.8em;
+    }
+    .col-lg-8 div{
+        font-size: 0.7em;
+    }
+  }
+  
